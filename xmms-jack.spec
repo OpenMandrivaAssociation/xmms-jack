@@ -1,6 +1,6 @@
 %define name xmms-jack
-%define version 0.17
-%define release %mkrel 2
+%define version 0.19
+%define release %mkrel 1
 %define jackversion 0.34.0
 
 Summary: Xmms output plugin for the jack sound server
