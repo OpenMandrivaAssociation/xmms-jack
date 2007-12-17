@@ -13,7 +13,6 @@ Patch: xmms-jack-0.15-audacious.patch
 URL: http://sourceforge.net/projects/xmms-jack
 License: GPL
 Group: Sound
-BuildRoot: %{_tmppath}/%{name}-buildroot
 BuildRequires: libxmms-devel
 BuildRequires: libjack-devel >= %jackversion
 BuildRequires: libsamplerate-devel
