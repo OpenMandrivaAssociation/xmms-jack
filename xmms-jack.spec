@@ -22,7 +22,6 @@ Requires: jackit  >= %jackversion
 Requires: xmms
 
 %description
-
 XMMS audio output plugin for the jack audio
 server(http://jackit.sourceforge.net).
 
