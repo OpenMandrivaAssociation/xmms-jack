@@ -1,6 +1,6 @@
 %define name xmms-jack
 %define version 0.19
-%define release %mkrel 4
+%define release %mkrel 5
 %define jackversion 0.34.0
 
 Summary: Xmms output plugin for the jack sound server
@@ -11,7 +11,8 @@ Release: %{release}
 Source0: http://prdownloads.sourceforge.net/xmms-jack/%{name}-%{version}.tar.bz2
 Patch: xmms-jack-0.15-audacious.patch
 URL: http://sourceforge.net/projects/xmms-jack
-License: GPL
+# xmms-jack is GPL, bio2jack is LGPL
+License: GPLv2+ and LGPLv2+
 Group: Sound
 BuildRoot: %{_tmppath}/%{name}-buildroot
 BuildRequires: libxmms-devel
