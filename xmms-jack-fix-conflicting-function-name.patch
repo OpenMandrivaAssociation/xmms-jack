@@ -1,0 +1,21 @@
+diff -p -up xmms-jack/jack.c~ xmms-jack/jack.c
+--- xmms-jack/jack.c~	2010-08-05 10:30:54.000000000 +0200
++++ xmms-jack/jack.c	2010-08-05 10:31:52.000000000 +0200
+@@ -288,7 +288,7 @@ void jack_init(void)
+ 
+ 
+ /* Return the amount of data that can be written to the device */
+-gint jack_free(void)
++gint xmms_jack_free(void)
+ {
+   unsigned long return_val = JACK_GetBytesFreeSpace(driver);
+   unsigned long tmp;
+@@ -627,7 +627,7 @@ OutputPlugin jack_op =
+ 	jack_close,
+ 	jack_flush,
+ 	jack_pause,
+-	jack_free,
++	xmms_jack_free,
+ 	jack_playing,
+ 	jack_get_output_time,
+ 	jack_get_written_time,

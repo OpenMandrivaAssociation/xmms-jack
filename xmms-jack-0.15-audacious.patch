@@ -1,0 +1,51 @@
+--- xmms-jack/configure.c~	2005-11-08 02:48:22.000000000 +0100
++++ xmms-jack/configure.c	2005-12-02 14:18:14.000000000 +0100
+@@ -22,7 +22,7 @@
+ #include "jack.h"
+ 
+ #ifdef FORBMP
+-#include <bmp/configfile.h>
++#include <audacious/configfile.h>
+ #else
+ #include <xmms/configfile.h>
+ #endif
+@@ -53,7 +53,7 @@
+   jack_set_port_connection_mode(); /* update the connection mode */
+ 
+ 	#ifdef FORBMP
+-	filename = g_strconcat(g_get_home_dir(), "/.bmp/config", NULL);
++	filename = g_strconcat(g_get_home_dir(), "/.audacious/config", NULL);
+ 	#else
+ 	filename = g_strconcat(g_get_home_dir(), "/.xmms/config", NULL);
+ 	#endif
+--- xmms-jack/jack.c~	2005-11-08 02:48:22.000000000 +0100
++++ xmms-jack/jack.c	2005-12-02 14:19:51.000000000 +0100
+@@ -5,7 +5,7 @@
+  */
+ 
+ #ifdef FORBMP
+-#include <bmp/configfile.h>
++#include <audacious/configfile.h>
+ #else
+ #include <xmms/configfile.h>
+ #endif
+@@ -204,7 +204,7 @@
+   gchar *filename;
+ 
+   #ifdef FORBMP
+-  filename = g_strconcat(g_get_home_dir(), "/.bmp/config", NULL);
++  filename = g_strconcat(g_get_home_dir(), "/.audacious/config", NULL);
+   #else
+   filename = g_strconcat(g_get_home_dir(), "/.xmms/config", NULL);
+   #endif
+--- xmms-jack/xconvert.h~	2005-11-08 02:48:22.000000000 +0100
++++ xmms-jack/xconvert.h	2005-12-02 14:21:51.000000000 +0100
+@@ -7,7 +7,7 @@
+ 
+ 
+ #ifdef FORBMP
+-#include <bmp/plugin.h>
++#include <audacious/plugin.h>
+ #else
+ #include <xmms/plugin.h>
+ #endif
