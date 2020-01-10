@@ -30,7 +30,7 @@ server(http://jackit.sourceforge.net).
 
 %prep
 %setup -q -n %name
-%apply_patches
+%autopatch -p1
 rm -f config.cache
 
 %build
