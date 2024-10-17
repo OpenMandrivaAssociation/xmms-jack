@@ -11,7 +11,7 @@ Release: %{release}
 Source0: http://prdownloads.sourceforge.net/xmms-jack/%{name}-%{version}.tar.bz2
 Patch0: xmms-jack-0.15-audacious.patch
 Patch1: xmms-jack-fix-conflicting-function-name.patch
-URL: http://sourceforge.net/projects/xmms-jack
+URL: https://sourceforge.net/projects/xmms-jack
 # xmms-jack is GPL, bio2jack is LGPL
 License: GPLv2+ and LGPLv2+
 Group: Sound
