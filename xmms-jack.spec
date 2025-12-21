@@ -16,6 +16,9 @@ URL: https://sourceforge.net/projects/xmms-jack
 License: GPLv2+ and LGPLv2+
 Group: Sound
 BuildRoot: %{_tmppath}/%{name}-buildroot
+BuildRequires:	autoconf
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
 BuildRequires: libxmms-devel
 BuildRequires: libjack-devel >= %jackversion
 BuildRequires: libsamplerate-devel
